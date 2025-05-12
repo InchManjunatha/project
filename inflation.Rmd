@@ -62,3 +62,15 @@ print("Hello World!")
 
 ```
 
+```{r}
+# use a function without loading the package:
+# package::function
+usethis::use_git_config(
+  user.name = "Inchara", # <-- change to your name
+  user.email = "inchara1602@gmail.com", # <-- and your email
+  init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
+```
+
+```{r}
+usethis::use_git()
+```
