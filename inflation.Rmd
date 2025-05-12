@@ -97,4 +97,7 @@ repro::automate()
 ```{r}
 repro::use_gha_docker()
 ```
+```{r}
+usethis::use_github()
+```
 
