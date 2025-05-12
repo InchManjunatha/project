@@ -78,3 +78,20 @@ usethis::use_git_config(
 ```{r}
 usethis::use_git()
 ```
+
+```{r}
+usethis::create_github_token(description = "Token for Repro Workshop 2025")
+
+```
+```{r}
+gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
+```
+
+```{r}
+usethis::gh_token_help()
+```
+
+```{r}
+usethis::use_github()
+```
+
