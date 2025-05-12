@@ -60,11 +60,6 @@ inflation %>%
 ```{r}
 with(mtcars, plot(hp, mpg))
 ```
-```{python}
-
-print("Hello World!")
-
-```
 
 ```{r}
 # use a function without loading the package:
@@ -93,5 +88,8 @@ usethis::gh_token_help()
 
 ```{r}
 usethis::use_github()
+```
+```{r}
+repro::automate()
 ```
 
