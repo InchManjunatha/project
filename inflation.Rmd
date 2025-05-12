@@ -41,6 +41,8 @@ For this dataset the Bank of England asked `r prettyNum(nrow(inflation), big.mar
 The survey has run **quarterly** since `r min(inflation$year)`.
 
 ```{r}
+
+library(ggplot2)
 inflation %>% 
   group_by(date) %>% 
   summarise(across(c(perception, expectation),
@@ -91,5 +93,8 @@ usethis::use_github()
 ```
 ```{r}
 repro::automate()
+```
+```{r}
+repro::use_gha_docker()
 ```
 
